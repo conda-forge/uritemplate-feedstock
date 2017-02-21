@@ -20,7 +20,7 @@ build:
 requirements:
   build:
     - python
-    - simplejson >=2.5.0
+    - setuptools
 
   run:
     - python
