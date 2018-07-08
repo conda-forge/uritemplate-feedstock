@@ -1,29 +1,22 @@
-{%set name = "uritemplate" %}
 {%set version = "3.0.0" %}
-{%set compress_type = "tar.gz" %}
-{%set hash_type = "sha256" %}
-{%set hash_val = "c02643cebe23fc8adb5e6becffe201185bf06c40bda5c0b4028a93f1527d011d" %}
 
 package:
-  name: {{ name }}
+  name: uritemplate
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.{{ compress_type }}
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ compress_type }}
-  {{ hash_type }}: {{ hash_val }}
+  url: https://pypi.io/packages/source/u/uritemplate/uritemplate-{{ version }}.tar.gz
+  sha256: c02643cebe23fc8adb5e6becffe201185bf06c40bda5c0b4028a93f1527d011d
 
 build:
-  noarch: python
   number: 1
+  noarch: python
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   host:
-    - pip
     - python
-    - setuptools
-
+    - pip
   run:
     - python
     - simplejson >=2.5.0
