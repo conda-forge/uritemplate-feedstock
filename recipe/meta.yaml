@@ -1,4 +1,4 @@
-{% set version = "3.0.0" %}
+{% set version = "3.0.1" %}
 
 package:
   name: uritemplate
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/u/uritemplate/uritemplate-{{ version }}.tar.gz
-  sha256: c02643cebe23fc8adb5e6becffe201185bf06c40bda5c0b4028a93f1527d011d
+  sha256: 5af8ad10cec94f215e3f48112de2022e1d5a37ed427fbd88652fa908f2ab7cae
 
 build:
-  number: 1
+  number: 0
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
