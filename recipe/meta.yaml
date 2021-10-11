@@ -1,4 +1,4 @@
-{% set version = "3.0.1" %}
+{% set version = "4.0.0" %}
 
 package:
   name: uritemplate
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/u/uritemplate/uritemplate-{{ version }}.tar.gz
-  sha256: 5af8ad10cec94f215e3f48112de2022e1d5a37ed427fbd88652fa908f2ab7cae
+  sha256: 6f4c5b093c915d269df69f291028a72dfdcaf68c8345b92e180f31daf53c4971
 
 build:
   number: 0
@@ -15,22 +15,25 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
   run:
-    - python
-    - simplejson >=2.5.0
+    - python >=3.6
 
 test:
   imports:
     - uritemplate
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
-  home: http://github.com/uri-templates/uritemplate-py/
-  license: Apache 2.0
+  home: https://uritemplate.readthedocs.org
+  license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
-  summary: 'URI Templates'
+  summary: Implementation of RFC 6570 URI Templates
   dev_url: http://github.com/uri-templates/uritemplate-py/
 
 extra:
