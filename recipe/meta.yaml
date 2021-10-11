@@ -15,22 +15,25 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
   run:
-    - python
-    - simplejson >=2.5.0
+    - python >=3.6
 
 test:
   imports:
     - uritemplate
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
-  home: http://github.com/uri-templates/uritemplate-py/
-  license: Apache 2.0
+  home: https://uritemplate.readthedocs.org
+  license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
-  summary: URI Templates
+  summary: Implementation of RFC 6570 URI Templates
   dev_url: http://github.com/uri-templates/uritemplate-py/
 
 extra:
