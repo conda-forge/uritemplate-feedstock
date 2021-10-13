@@ -1,13 +1,13 @@
 About uritemplate
 =================
 
-Home: http://github.com/uri-templates/uritemplate-py/
+Home: https://uritemplate.readthedocs.org
 
-Package license: Apache 2.0
+Package license: Apache-2.0
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/uritemplate-feedstock/blob/master/LICENSE.txt)
 
-Summary: URI Templates
+Summary: Implementation of RFC 6570 URI Templates
 
 Development: http://github.com/uri-templates/uritemplate-py/
 
