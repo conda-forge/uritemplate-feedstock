@@ -1,4 +1,4 @@
-{% set version = "4.0.0" %}
+{% set version = "4.1.1" %}
 
 package:
   name: uritemplate
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/u/uritemplate/uritemplate-{{ version }}.tar.gz
-  sha256: 6f4c5b093c915d269df69f291028a72dfdcaf68c8345b92e180f31daf53c4971
+  sha256: 4346edfc5c3b79f694bccd6d6099a322bbeb628dbf2cd86eea55a456ce5124f0
 
 build:
   number: 0
